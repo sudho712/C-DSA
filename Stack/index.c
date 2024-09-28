@@ -1,6 +1,7 @@
 #include<stdio.h>
-#define MAX_SIZE 
-int stack[MAX_SIZE]
+#include <conio.h>
+#define MAX_SIZE 5
+int stack[MAX_SIZE];
 int top=-1;
 
 void push(int item)
@@ -47,13 +48,13 @@ int main()
     while (1)
     {
         printf("Enter Your Choice :");
-        scanf("%d",choice);
+        scanf("%d",&choice);
 
         switch(choice)
         {
             case 1:
                 printf("Enter Value to push in stack : ");
-                scanf("%d",item);
+                scanf("%d",&item);
                 push(item);
                 break;
             case 2:
@@ -67,6 +68,7 @@ int main()
             default:
                 printf("Invalid choice ! \n");
         }
+          
     }
-    
+    getch();
 }
